@@ -4,6 +4,7 @@
 <img src="images/bg-image.jpeg" alt="pizza" class="bg-image" />
 <div class="login-frame">
   <h2>Food & Labor Tracker</h2>
+  <!-- on click routes to home page -->
   <button class="login">Enter</button>
 </div>
 
@@ -18,10 +19,10 @@
   .login-frame {
     background-color: rgba(255, 255, 255, 0.45);
     position: fixed;
-    left: 15%;
+    left: 10%;
     top: 10%;
     width: 25%;
-    height: 25%;
+    max-height: 25%;
     border-radius: 0.25em;
     text-align: center;
   }
@@ -32,7 +33,7 @@
     color: black;
     border-color: black;
     border-radius: 0.5em;
-    top: 50%;
+
     width: 25%;
   }
   .login:hover {
