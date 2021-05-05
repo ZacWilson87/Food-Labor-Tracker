@@ -1,10 +1,14 @@
 <script>
+  import { Router } from "svelte-router-spa";
+  import routes from "../routes";
+  import { link } from "svelte-router-spa";
 </script>
 
 <header>
+  <Router {routes} />
   <div class="nav-links">
-    <a href="" id="newRecord"><p>Create New Record</p></a>
-    <a href="" id="search"><p>Search</p></a>
+    <a href="/enter-record" use:link id="newRecord"><p>Create New Record</p></a>
+    <a href="/search" use:link id="search"><p>Search</p></a>
   </div>
   <h4 id="headerTitle">Food & Labor Tracker</h4>
 </header>
